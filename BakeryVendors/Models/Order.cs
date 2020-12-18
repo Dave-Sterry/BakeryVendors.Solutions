@@ -8,6 +8,9 @@ namespace BakeryVendors.Models
     public string Description { get; set; }
     public string Price { get; set; }
     public string Date { get; set; }
+    public int Id { get; }
+
+    private static List<Order> _instances = new List<Order> { };
 
     public Order(string title, string description, string price, string date)
     {
@@ -16,7 +19,7 @@ namespace BakeryVendors.Models
       Price = price;
       Date = date;
       _instances.Add(this);
-      Id = _instances.Count;
+      Id = 2;
     }
 
     public static void ClearAll()
