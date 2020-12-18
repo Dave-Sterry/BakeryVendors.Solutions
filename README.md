@@ -5,7 +5,7 @@
 
 ## Pierre's Vendors
 
-_A simple website so Pierre can track his Vendors and their orders_
+_A simple website so Pierre can track his Vendors and their orders. The user is given the ablity to add new Vendors, and then add new Orders for each vendor they created_
 
 
 ## Requirements
@@ -13,12 +13,12 @@ _A simple website so Pierre can track his Vendors and their orders_
 
 # How to get this project 
 ## Download from Github:
-1. Use the browser navigate to my GitHub page [respository](https://github.com/Dave-Sterry/Bakery.Solutions)
+1. Use the browser navigate to my GitHub page [respository](https://github.com/Dave-Sterry/BakeryVendors.Solutions)
 2. Click the Green **Code** button and select **Download Zip**
 
 ## Alternatively clone from Github via Gitbash:
 1. In your terminal, navigate to the folder where you would like to clone the project too
-2. Clone this repo to your chosen folder using "git clone https://github.com/Dave-Sterry/Bakery.Solutions in terminal
+2. Clone this repo to your chosen folder using "git clone https://github.com/Dave-Sterry/BakeryVendors.Solutions in terminal
 
 # How to run this project
 ## If you chose to download via zip
