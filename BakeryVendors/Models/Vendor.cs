@@ -18,8 +18,13 @@ namespace BakeryVendors.Models
 
     public static List<Vendor> GetAll()
     {
-      return null;
+      return _instances;
     }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    } 
 
   }
 }
