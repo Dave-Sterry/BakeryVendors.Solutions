@@ -1,11 +1,11 @@
-# Pierre's Bakery
+# Pierre's Vendors
 <img src="https://github.com/Dave-Sterry.png" width="200px" height="auto">
 
-### A C# Console App by David Sterry updated on 12/11/2020
+### A C# Website by David Sterry updated on 12/18/2020
 
-## Pierre's Bakery
+## Pierre's Vendors
 
-_A console app for a bakery. This console app present the user with the ability to purchase bread and/or pastries along with coffee. It correctly calculates the price based on the given rates, and returns the total to the user_
+_A simple website so Pierre can track his Vendors and their orders_
 
 
 ## Requirements
@@ -26,20 +26,20 @@ _A console app for a bakery. This console app present the user with the ability 
 2. Open the root folder in your code editor 
 3. Once you have the program open in your code editor, run dotnet restore Bakery.Test.csproj in the terminal to set the project up.
 4. After the project is sucessfully set up, navigate to the Bakery folder in the terminal.
-5. Then use the commmand dotnet run to start the console app. 
-6. Follow the prompts and buy something from Pierre's Bakery!
+5. Then use the commmand dotnet run to start the website 
+6. Using your browser navigate to localhost:5000. 
 
 ## If you cloned via Git
 1. In the terminal navigate to the folder the project is located in
 2. Open the root folder in your code editor using the code . command 
 3. Once you have the program open in your code editor, run dotnet restore Bakery.Test.csproj in the terminal to set the project up.
 4. After the project is sucessfully set up, navigate to the Bakery folder in the terminal.
-5. Then use the commmand dotnet run to start the console app. 
-6. Follow the prompts and buy something from Pierre's Bakery!
+5. Then use the commmand dotnet run to start the website 
+6. Using your browser navigate to localhost:5000.
 
 ## How to run tests
 1. Open the project in your coder editor.
-2. Navigate in the terminal to Bakery.Test/ModelTests.
+2. Navigate in the terminal to BakeryVendors.Tests/ModelTests.
 3. Run the command dotnet test. 
 4. View tests results in the terminal.
 ## Known Bugs
@@ -54,8 +54,12 @@ _Please contact me at sterry.david@gmail.com in regards to this project_
 
 * C# v 7.30
 * .NET Core v 2.2
-* dotnet script
-* REPL
+* dotnet script, REPL
+* Razor View Engine
+* ASP.NET Core MVC
+* RESTful Routing, CRUD, & HTTP
+* Bootstrap Library
+* CSHTML
 * Git
 * VSCode
 
