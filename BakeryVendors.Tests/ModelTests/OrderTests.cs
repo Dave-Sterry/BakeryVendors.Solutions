@@ -49,7 +49,28 @@ namespace BakeryVendors.Tests
     }
 
     [TestMethod]
-    public void GetId_ReturnsCategoryId_Int()
+    public void GetAll_ReturnsOrderList_OrderList()
+    {
+      string title = "CoffeeShop";
+      string description = "5 pastries";
+      string price = "$10";
+      string date = "11/12/20";
+      Order newOrder1 = new Order(title, description, price, date);
+      string title2 = "GroceryStore";
+      string description2 = "100 pastries";
+      string price2 = "$300";
+      string date2 = "11/15/20";
+      Order newOrder2 = new Order(title2, description2, price2, date2);
+      List<Order> newOrder = new List<Order> {newOrder1, newOrder2};
+
+      List<Order> result = Order.GetAll();
+
+      CollectionAssert.AreEqual(newOrder, result);
+
+    }
+
+    [TestMethod]
+    public void GetId_ReturnsOrderId_Int()
     {
       string title = "CoffeeShop";
       string description = "5 pastries";
