@@ -19,7 +19,7 @@ namespace BakeryVendors.Models
       Price = price;
       Date = date;
       _instances.Add(this);
-      Id = 2;
+      Id = _instances.Count;
     }
 
     public static void ClearAll()
