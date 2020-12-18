@@ -56,5 +56,18 @@ namespace BakeryVendors.Tests
 
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void Find_FindsReturnsCorrectVendor_Vendor()
+    {
+      string vendor1 = "CoffeeShop";
+      string vendor2 = "NewSeaons";
+      Vendor newVendor1  = new Vendor(vendor1);
+      Vendor newVendor2 = new Vendor(vendor2);
+
+      Vendor result = Vendor.Find(2);
+
+      Assert.AreEqual(newVendor2, result);
+    }
   }
 }

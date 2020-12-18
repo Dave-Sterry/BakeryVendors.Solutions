@@ -26,5 +26,10 @@ namespace BakeryVendors.Models
       _instances.Clear();
     } 
 
+    public static Vendor Find(int searchId)
+    {
+      return null;
+    }
+
   }
 }
