@@ -28,7 +28,7 @@ namespace BakeryVendors.Models
 
     public static Vendor Find(int searchId)
     {
-      return null;
+      return _instances[searchId - 1 ];
     }
 
   }
