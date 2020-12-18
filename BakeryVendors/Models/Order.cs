@@ -11,10 +11,10 @@ namespace BakeryVendors.Models
 
     public Order(string title, string description, string price, string date)
     {
-      Title = "test";
-      Description = "test";
-      Price = "test";
-      Date = "test";
+      Title = title;
+      Description = description;
+      Price = price;
+      Date = date;
       //_instances.Add(this);
     }
   }
