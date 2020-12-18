@@ -8,13 +8,13 @@ namespace BakeryVendor.Controllers
   {
     [HttpGet("/vendors/{vendorId}/orders/new")]
 
-    public ActionResult New(in vendorId)
+    public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
 
-    [HttpGet("/vendors/{vendorId}/orders/(orderId}")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
 
     public ActionResult Show(int vendorId, int orderId)
     {

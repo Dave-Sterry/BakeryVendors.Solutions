@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
-using BakeryVendor.Models;
+using BakeryVendors.Models;
 
 namespace BakeryVendor.Controllers
 {
@@ -38,11 +38,11 @@ namespace BakeryVendor.Controllers
     Vendor choosenVendor = Vendor.Find(id);
     List<Order> choosenOrder = choosenVendor.Orders;
     model.Add("vendor", choosenVendor);
-    model.Add("orders", choosenOrders);
-    return view(model);
+    model.Add("orders", choosenOrder);
+    return View(model);
     }
 
-    [HttpPost("/vendors/{vendorsId/orders")]
+    [HttpPost("/vendors/{vendorsId}/orders")]
 
     public ActionResult Create(int vendorId, string orderTitle, string orderDescription, string orderPrice, string orderDate )
     {
@@ -50,9 +50,9 @@ namespace BakeryVendor.Controllers
       Vendor choosenVendor = Vendor.Find(vendorId);
       Order choosenOrder = new Order(orderTitle, orderDescription, orderPrice, orderDescription);
       choosenVendor.AddOrder(choosenOrder);
-      List<Order> vendorOrders = choosenOrder.Orders;
-      model.Add("orders", vendorOrders);
-      model.Add("vendor" choosenVendor);
+      List<Order> vendorOrders = choosenVendor.Orders;
+      model.Add("orders", choosenOrder);
+      model.Add("vendor", choosenVendor);
       return View("Show", model);
     }
 
