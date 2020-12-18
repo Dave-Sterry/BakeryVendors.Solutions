@@ -22,6 +22,11 @@ namespace BakeryVendors.Models
       Id = _instances.Count;
     }
 
+    public static List<Order> GetAll()
+    {
+      return _instances;
+    }
+
     public static void ClearAll()
     {
       _instances.Clear();
