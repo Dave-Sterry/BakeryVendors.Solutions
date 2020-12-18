@@ -7,8 +7,13 @@ namespace BakeryVendors.Tests
 {
   [TestClass]
 
-  public class OrderTest
+  public class OrderTest : IDisposable
   {
+
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
 
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
@@ -35,6 +40,20 @@ namespace BakeryVendors.Tests
       Assert.AreEqual(date, dateResult);
     }
     
+    [TestMethod]
+    public void GetId_ReturnsCategoryId_Int()
+    {
+      string title = "CoffeeShop";
+      string description = "5 pastries";
+      string price = "$10";
+      string date = "11/12/20";
+      Order newOrder = new Order(title, description, price, date);
+
+      int result = newOrder.Id;
+
+      Assert.AreEqual(1,result)
+
+    }
   }
   
 }
