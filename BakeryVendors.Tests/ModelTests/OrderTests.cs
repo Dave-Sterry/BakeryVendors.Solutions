@@ -81,8 +81,27 @@ namespace BakeryVendors.Tests
       int result = newOrder.Id;
 
       Assert.AreEqual(1,result);
-
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      string title = "CoffeeShop";
+      string description = "5 pastries";
+      string price = "$10";
+      string date = "11/12/20";
+      Order newOrder1 = new Order(title, description, price, date);
+      string title2 = "GroceryStore";
+      string description2 = "100 pastries";
+      string price2 = "$300";
+      string date2 = "11/15/20";
+      Order newOrder2 = new Order(title2, description2, price2, date2);
+
+      Order result = Order.Find(2);
+
+      Assert.AreEqual(newOrder2, result);
+    }
+
   }
   
 }
