@@ -46,15 +46,15 @@ namespace BakeryVendors.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
-    // [TestMethod]
-    // public void GetId_ReturnsVendorWithId_Int()
-    // {
-    //   string name = "VendorTest";
-    //   Vendor newVendor = new Vendor(name);
+    [TestMethod]
+    public void GetId_ReturnsVendorWithId_Int()
+    {
+      string name = "VendorTest";
+      Vendor newVendor = new Vendor(name);
 
-    //   string result = newVendor.Id;
+      int result = newVendor.Id;
 
-    //   Assert.AreEqual(2, result);
-    // }
+      Assert.AreEqual(2, result);
+    }
   }
 }

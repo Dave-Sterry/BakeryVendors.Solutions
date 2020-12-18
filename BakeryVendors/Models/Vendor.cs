@@ -18,7 +18,7 @@ namespace BakeryVendors.Models
 
     public static List<Vendor> GetAll()
     {
-      return _instances;
+      return null;
     }
 
     public static void ClearAll()
