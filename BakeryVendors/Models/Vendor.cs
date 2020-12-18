@@ -9,7 +9,7 @@ namespace BakeryVendors.Models
 
     public Vendor(string vendorName)
     {
-      Name = vendorName;
+      Name = "newseasons";
     }
   }
 }
