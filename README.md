@@ -28,6 +28,7 @@ _A simple website so Pierre can track his Vendors and their orders. The user is 
 4. After the project is sucessfully set up, navigate to the Bakery folder in the terminal.
 5. Then use the commmand dotnet run to start the website 
 6. Using your browser navigate to localhost:5000. 
+7. Add some Vendors and Orders!
 
 ## If you cloned via Git
 1. In the terminal navigate to the folder the project is located in
@@ -36,6 +37,7 @@ _A simple website so Pierre can track his Vendors and their orders. The user is 
 4. After the project is sucessfully set up, navigate to the Bakery folder in the terminal.
 5. Then use the commmand dotnet run to start the website 
 6. Using your browser navigate to localhost:5000.
+7. Add some Vendors and Orders!
 
 ## How to run tests
 1. Open the project in your coder editor.
