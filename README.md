@@ -1,5 +1,7 @@
 # Pierre's Vendors
+<div align="center">
 <img src="https://github.com/Dave-Sterry.png" width="200px" height="auto">
+</div>
 
 ### A C# Website by David Sterry updated on 12/18/2020
 
@@ -50,7 +52,7 @@ There are no known bugs at this time
 
 ## Contact and Support details
 
-_Please contact me at sterry.david@gmail.com in regards to this project_
+_If you have any issues during installation delete both the bin and obj folders and follow the set up instructions again. Please contact me at sterry.david@gmail.com in regards to this project_
 
 ## Techknowlogies Used
 
