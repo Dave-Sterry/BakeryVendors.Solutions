@@ -10,9 +10,9 @@
 <h3>@Model["order"].Price</h3>
 <h3>@Model["order"].Date</h3>
 
-<form action="/orders/delete" method = "post">
+@* <form action="/orders/delete" method = "post">
   <button type="submit" name="button">Clear this order</button>
-</form>
+</form> *@
 <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order for this vendor</a>
 
 <a href='/vendors'>Back to Vendors List</a>
