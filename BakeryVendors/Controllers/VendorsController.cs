@@ -22,7 +22,6 @@ namespace BakeryVendor.Controllers
       return View();
     }
 
-
     [HttpGet("/vendors/{id}")]
 
     public ActionResult Show(int id)

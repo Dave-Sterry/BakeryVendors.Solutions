@@ -4,11 +4,17 @@
 
 <h1>Order List Details</h1>
 
-<h2>Vendor: @Model["vendor"].Name</h2>
-<h3>@Model["order"].Title</h3>
-<h3>@Model["order"].Description</h3>
-<h3>@Model["order"].Price</h3>
-<h3>@Model["order"].Date</h3>
+<div class = "card">
+  <div class = "card-body">
+    <h2 class ="card-title">Vendor: @Model["vendor"].Name</h2>
+      <ol class ="card-text">
+        <h3>Order Title: @Model["order"].Title</h3>
+        <h3>Order Description: @Model["order"].Description</h3>
+        <h3>Order Price: @Model["order"].Price</h3>
+        <h3>Order Date: @Model["order"].Date</h3>
+      </ol>
+    </div>
+</div>
 
 @* <form action="/orders/delete" method = "post">
   <button type="submit" name="button">Clear this order</button>
